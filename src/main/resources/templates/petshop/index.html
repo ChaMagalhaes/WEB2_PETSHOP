@@ -23,6 +23,7 @@
             <th scope="col">Espécie</th>
             <th scope="col">Idade</th>
             <th scope="col">Excluir</th>
+            <th scope="col">Editar</th>
         </tr>
         </thead>
         <tbody>
@@ -33,6 +34,9 @@
             <td th:text="${pet.idade}"></td>
             <td>
                 <a th:href="@{/pet/delete/{id}(id=${pet.id})}">Deletar</a>
+            </td>
+            <td>
+                <a th:href="@{/pet/edit/{id}(id=${pet.id})}">Editar</a>
             </td>
         </tr>
         </tbody>
